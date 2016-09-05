@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="L_Y">
+      <UniqueIdentifier>{cc1ad1fe-a5da-4fc4-b5f5-c8b932e0b29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AutoGen">
+      <UniqueIdentifier>{8ab05088-dd91-4fb1-bb77-d789926d6f7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="location.hh">
+      <Filter>AutoGen</Filter>
+    </None>
+    <None Include="mc_parser.tab.hh">
+      <Filter>AutoGen</Filter>
+    </None>
+    <None Include="position.hh">
+      <Filter>AutoGen</Filter>
+    </None>
+    <None Include="stack.hh">
+      <Filter>AutoGen</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="mc_driver.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="lex.yy.cc">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+    <ClCompile Include="mc_parser.tab.cc">
+      <Filter>AutoGen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mc_driver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="mc_scanner.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="mc_action.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Flex Include="mc_lexer.l">
+      <Filter>L_Y</Filter>
+    </Flex>
+  </ItemGroup>
+  <ItemGroup>
+    <Bison Include="mc_parser.yy">
+      <Filter>L_Y</Filter>
+    </Bison>
+  </ItemGroup>
+</Project>
